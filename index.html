@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Podolog Bytom - gabinet podologiczny Beata Nykiel-Drzewiecka</title>
+<meta name="description" content="Gabinet podologiczny w Bytomiu, ul. Świętych Cyryla i Metodego 26B. Paznokcie wrastające i zmienione chorobowo, odciski, modzele, pękające pięty, brodawki. Zapisy online i pod numerem 881 959 383.">
+<meta name="theme-color" content="#292f45">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="img/hero-m-760.webp" imagesrcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1080.webp 1080w" imagesizes="100vw" media="(max-width:860px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w, img/hero-3352.webp 3352w" imagesizes="100vw" media="(min-width:861px)" fetchpriority="high">
+<link rel="preload" as="font" type="font/woff2" href="fonts/lora-rdzen.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fonts/inter-rdzen.woff2" crossorigin>
+<style>
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:"Lora";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/lora-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013-2014,U+2018-2019,U+201C-201E,U+2022,U+2026,U+20AC}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/inter-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Lora-fb";src:local("Georgia");size-adjust:104%;ascent-override:88%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Inter-fb";src:local("Arial");size-adjust:107.1%;ascent-override:90.5%;descent-override:22.5%;line-gap-override:0%}
+/* kolory dokladnie z logo: granat tla logo #292F45, zloto konturu stopy #8A681D */
+:root{--nav:#292f45;--nav2:#1f2436;--gold:#8a681d;--gold2:#c9a24a;--ink:#1d2133;--mut:#4d5367;--g:#f2f3f6;--line:#dde0e7;--hh:64px;--w:min(calc(100vw - 32px),1320px)}
+@media (min-width:861px){:root{--hh:84px;--w:min(88vw,1320px)}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hh);-webkit-text-size-adjust:100%}
+body{margin:0;font-family:Inter,"Inter-fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,18px);line-height:1.65;color:var(--ink);background:#fff;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{margin:0;font-family:Lora,"Lora-fb",Georgia,serif;font-weight:600;line-height:1.14}
+h2{font-size:clamp(30px,2.7vw,48px)}
+h3{font-size:clamp(20px,1.3vw,24px);line-height:1.25}
+p{margin:0}
+.wrap{width:var(--w);margin:0 auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;z-index:99;background:#fff;padding:8px 12px}
+
+/* motyw z logo: kreska - kropka - kreska pod nazwiskiem */
+.kk{display:flex;align-items:center;gap:10px;width:132px;margin:18px 0 0;color:var(--gold)}
+.kk::before,.kk::after{content:"";flex:1;height:1.5px;background:currentColor}
+.kk i{width:9px;height:9px;border-radius:50%;background:currentColor;flex:none}
+.c .kk{margin-left:auto;margin-right:auto}
+
+/* przyciski: zaokraglenie jak owal palca w logo, tylko po jednej stronie */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;background:var(--gold);color:#fff;font:600 1rem/1.1 Inter,"Inter-fb",Arial,sans-serif;text-decoration:none;border:0;border-radius:0 28px 28px 0;cursor:pointer;transition:background .2s}
+.btn:hover{background:#755713}
+.btn.jasny{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.btn.jasny:hover{background:rgba(255,255,255,.12)}
+.btn:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+
+/* naglowek */
+.top{position:fixed;inset:0 0 auto;z-index:50;height:var(--hh);color:#fff;transition:background .25s,color .25s,box-shadow .25s}
+.top.sc,.top.open{background:#fff;color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:block;position:relative;width:clamp(150px,13vw,190px);text-decoration:none}
+.logo img{width:100%;height:auto;transition:opacity .25s}
+.logo .lg-g{position:absolute;inset:0;opacity:0}
+.top.sc .logo .lg-b,.top.open .logo .lg-b{opacity:0}.top.sc .logo .lg-g,.top.open .logo .lg-g{opacity:1}
+.menu{display:flex;align-items:center;gap:clamp(18px,2.1vw,36px)}
+.menu a{text-decoration:none;font-size:.97rem;font-weight:500;padding:12px 0;position:relative}
+.menu a:not(.btn)::after{content:"";position:absolute;left:50%;bottom:3px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--gold2);transform:scale(0);transition:transform .2s}
+.top.sc .menu a:not(.btn)::after{background:var(--gold)}
+.menu a:not(.btn):hover::after,.menu a.on::after{transform:scale(1)}
+.menu .tel{font-weight:600;white-space:nowrap}
+.menu .btn{min-height:48px;padding:0 24px;font-size:.95rem}
+.burger{display:none}
+@media (max-width:1100px){
+ .burger{display:flex;align-items:center;justify-content:center;width:48px;height:48px;margin-right:-8px;background:none;border:0;color:inherit;cursor:pointer}
+ .burger span,.burger span::before,.burger span::after{content:"";display:block;width:24px;height:2px;background:currentColor;position:relative;transition:transform .2s}
+ .burger span::before{position:absolute;top:-7px}.burger span::after{position:absolute;top:7px}
+ .top.open .burger span{background:transparent}.top.open .burger span::before{transform:translateY(7px) rotate(45deg)}.top.open .burger span::after{transform:translateY(-7px) rotate(-45deg)}
+ .menu{position:fixed;inset:var(--hh) 0 auto;background:#fff;color:var(--ink);flex-direction:column;align-items:stretch;gap:0;padding:6px 16px 22px;border-top:1px solid var(--line);box-shadow:0 18px 30px rgba(20,24,40,.14);display:none}
+ .top.open .menu{display:flex}
+ .menu a:not(.btn){padding:14px 4px;border-bottom:1px solid var(--line);font-size:1.08rem}
+ .menu a:not(.btn)::after{display:none}
+ .menu a.on{color:var(--gold)}
+ .menu .btn{margin-top:18px;min-height:54px}
+}
+
+/* pierwszy ekran */
+.hero{position:relative;color:#fff;background:var(--nav);isolation:isolate}
+.hero picture img{width:100%;height:auto}
+.hero .tx{position:relative;padding:22px 0 40px}
+.hero .adr{font-size:.95rem;color:#e7e3d6}
+.hero h1{margin-top:10px;font-size:clamp(30px,8vw,40px);max-width:17ch;text-wrap:balance}
+.hero .lead{margin-top:16px;font-size:1.04rem;line-height:1.6;max-width:44ch;color:#eef0f5}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.hero .kk{color:var(--gold2)}
+@media (max-width:860px){
+ .hero picture{display:block;position:relative;padding-top:var(--hh);background:var(--nav)}
+ .hero picture::after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(180deg,rgba(41,47,69,0),var(--nav))}
+ .hero .cta{gap:10px}
+ .hero .cta .btn{flex:1 1 0;padding:0 12px;font-size:.97rem;white-space:nowrap}
+ .hero .cta .dl{display:none}
+ .hero{min-height:100svh;display:flex;flex-direction:column}
+ .hero .tx{padding:14px 0 36px;flex:1;display:flex;flex-direction:column;justify-content:center}
+ .hero .lead{margin-top:12px}
+}
+@media (min-width:861px){
+ .hero{min-height:max(640px,100svh);display:flex;align-items:center}
+ .hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+ .hero picture img{object-fit:cover;object-position:50% 40%}
+ .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(31,36,54,.94) 0%,rgba(31,36,54,.88) 34%,rgba(31,36,54,.5) 56%,rgba(31,36,54,0) 74%)}
+ .hero .tx{padding:calc(var(--hh) + 40px) 0 64px}
+ .hero h1{font-size:clamp(40px,3.4vw,62px);max-width:19ch}
+ .hero .lead{font-size:clamp(17px,1.05vw,20px);max-width:40ch}
+ .hero .tx>*{max-width:min(48vw,660px)}
+ .hero .tx>h1{max-width:min(52vw,820px)}
+}
+
+/* sekcje */
+.sek{padding:clamp(64px,7vw,120px) 0}
+.sek.g{background:var(--g)}
+.sek .wst{max-width:62ch;margin-top:20px;color:var(--mut)}
+.c{text-align:center}.c .wst{margin-left:auto;margin-right:auto}
+
+/* uslugi */
+.usl{display:grid;grid-template-columns:repeat(3,1fr);gap:0 clamp(28px,3vw,56px);margin-top:clamp(36px,4vw,60px)}
+.usl article{padding:28px 0 30px;border-top:1px solid var(--line);position:relative}
+.usl article::before{content:"";position:absolute;left:0;top:-1px;width:44px;height:5px;border-top:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold)}
+.usl p{margin-top:10px;color:var(--mut)}
+.usl .cz{display:flex;justify-content:space-between;gap:12px;margin-top:16px;font-size:.95rem;color:var(--mut)}
+.usl .cz b{color:var(--ink);font-weight:600;white-space:nowrap}
+@media (max-width:1000px){.usl{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.usl{grid-template-columns:1fr}}
+
+/* cennik */
+.cen{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(32px,5vw,96px);margin-top:clamp(32px,4vw,56px)}
+.cen h3{font-size:1.15rem;margin:30px 0 6px;color:var(--gold)}
+.cen h3:first-child{margin-top:0}
+.cen dl{margin:0}
+.cen .r{display:flex;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.cen dt{flex:1}
+.cen dd{margin:0;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cen small{display:block;color:var(--mut);font-size:.88rem;line-height:1.45}
+.cen-st{margin-top:30px;font-size:.95rem;color:var(--mut);max-width:80ch}
+.cen-cta{margin-top:30px}
+@media (max-width:760px){.cen{grid-template-columns:1fr}.cen>div+div h3:first-child{margin-top:30px}}
+
+/* o mnie */
+.om{display:grid;grid-template-columns:minmax(260px,400px) 1fr;gap:clamp(36px,6vw,110px);align-items:center}
+.om figure{margin:0;position:relative;max-width:400px}
+.om figure img{position:relative;z-index:1;width:100%;aspect-ratio:1}
+.om figure::before,.om figure::after{content:"";position:absolute;inset:16px -16px -16px 16px;border:1.5px solid var(--gold);border-radius:0 120px 0 0}
+.om figure::after{inset:24px -24px -24px 24px;opacity:.55}
+.om figure img{border-radius:0 120px 0 0}
+.om .tekst p{margin-top:16px;color:var(--mut)}
+.om .tekst p.cyt{font-family:Lora,"Lora-fb",Georgia,serif;font-size:clamp(19px,1.35vw,24px);line-height:1.5;color:var(--ink);margin-top:26px;padding-left:22px;border-left:1.5px solid var(--gold)}
+.om .podp{margin-top:22px;font-weight:600}
+.om .podp span{display:block;font-weight:400;color:var(--mut);font-size:.95rem}
+@media (max-width:860px){.om{grid-template-columns:1fr}.om figure{max-width:min(340px,82vw)}}
+
+/* efekty - ciemna sekcja */
+.ef{background:var(--nav);color:#fff}
+.ef .wst{color:#d5d8e2}
+.ef .kk{color:var(--gold2)}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*20px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-top:clamp(32px,4vw,52px);cursor:grab;overscroll-behavior-x:contain}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none}
+.tor figure{margin:0;scroll-snap-align:start}
+.tor button{display:block;width:100%;padding:0;border:0;background:#1f2436;cursor:zoom-in}
+.tor img{width:100%;aspect-ratio:1;object-fit:cover;-webkit-user-drag:none;user-select:none}
+.tor figcaption{margin-top:12px;font-size:.98rem;color:#e7e9ef}
+.nav-t{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:24px}
+.nav-t .lic{font-size:.92rem;color:#b9bdcb}
+.nav-t div{display:flex;gap:10px}
+.nav-t button{width:48px;height:48px;border:1.5px solid rgba(255,255,255,.6);background:none;color:#fff;cursor:pointer;display:grid;place-items:center}
+.nav-t button:hover:not(:disabled){background:rgba(255,255,255,.1)}
+.nav-t button:disabled{opacity:.3;cursor:default}
+.nav-t svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8}
+@media (max-width:1000px){.tor{grid-auto-columns:calc((100% - 20px)/2.3)}}
+@media (max-width:560px){.tor{grid-auto-columns:78%;gap:14px}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:90;background:rgba(18,21,33,.95);display:none;align-items:center;justify-content:center;flex-direction:column;padding:56px 12px 20px;color:#fff}
+.lb.on{display:flex}
+.lb img{max-width:min(92vw,1100px);max-height:calc(100svh - 150px);width:auto;height:auto;object-fit:contain}
+.lb p{margin-top:14px;text-align:center}
+.lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:52px;height:52px;display:grid;place-items:center}
+.lb svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8}
+.lb .x{top:6px;right:6px}.lb .pv{left:4px;top:50%;margin-top:-26px}.lb .nx{right:4px;top:50%;margin-top:-26px}
+
+/* kontakt */
+.kon{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,5vw,90px);margin-top:clamp(32px,4vw,52px)}
+.kon h3{font-size:1.15rem;margin-bottom:8px}
+.dane>div+div{margin-top:28px}
+.dane a{text-decoration:none;font-weight:600}
+.dane a:hover{color:var(--gold)}
+.dane .duzy{font-size:clamp(22px,1.6vw,28px);font-family:Lora,"Lora-fb",Georgia,serif}
+.godz{width:100%;max-width:420px;border-collapse:collapse}
+.godz td{padding:7px 0;border-bottom:1px solid var(--line)}
+.godz td+td{text-align:right;font-variant-numeric:tabular-nums}
+.godz .zam td+td{color:var(--mut)}
+.dane .btn{margin-top:6px}
+.mapa{position:relative;min-height:420px;background:#e4e6ec;border-radius:0 120px 0 0;overflow:hidden}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.mapa .zas{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:24px;color:var(--mut)}
+@media (max-width:860px){.kon{grid-template-columns:1fr}.mapa{min-height:320px}}
+
+/* stopka */
+.st{background:var(--nav2);color:#c9ccd7;padding:56px 0 28px;font-size:.95rem}
+.st .gr{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.st img{width:180px;height:auto}
+.st h3{font:600 1rem/1.3 Inter,"Inter-fb",Arial,sans-serif;color:#fff;margin-bottom:10px}
+.st a{text-decoration:none}.st a:hover{color:#fff}
+.st ul{list-style:none;margin:0;padding:0}.st li{padding:3px 0}
+.st .dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:.88rem}
+@media (max-width:760px){.st .gr{grid-template-columns:1fr 1fr}.st .gr>div:first-child{grid-column:1/-1}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+
+</style>
+</head>
+<body>
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="logo" href="#start" aria-label="Podologia Beata Nykiel-Drzewiecka - początek strony">
+   <img class="lg-b" src="img/logo-biale.webp" width="600" height="216" alt="Podologia Beata Nykiel-Drzewiecka">
+   <img class="lg-g" src="img/logo-granat.webp" width="600" height="216" alt="" aria-hidden="true">
+  </a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otwórz menu"><span></span></button>
+  <nav class="menu" id="menu" aria-label="Menu główne">
+   <a href="#uslugi">Usługi</a>
+   <a href="#cennik">Cennik</a>
+   <a href="#o-mnie">O mnie</a>
+   <a href="#efekty">Efekty</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel" href="tel:+48881959383">881 959 383</a>
+   <a class="btn" href="https://booksy.com/pl-pl/359243_podologia-beata-nykiel_podologia_12355_bytom" rel="noopener" target="_blank">Umów wizytę</a>
+  </nav>
+ </div>
+</header>
+
+<main id="tresc">
+<section class="hero" id="start">
+ <picture>
+  <source media="(max-width:860px)" srcset="img/hero-m-480.webp 480w, img/hero-m-760.webp 760w, img/hero-m-1080.webp 1080w" sizes="100vw">
+  <img src="img/hero-1600.webp" srcset="img/hero-960.webp 960w, img/hero-1600.webp 1600w, img/hero-2560.webp 2560w, img/hero-3352.webp 3352w" sizes="100vw" width="3352" height="2694" alt="Podolog w rękawiczkach ogląda stopę pacjenta" fetchpriority="high">
+ </picture>
+ <div class="wrap tx">
+  <p class="adr">ul. Świętych Cyryla i Metodego 26B, Bytom</p>
+  <h1>Gabinet podologiczny w Bytomiu - zabieg, profilaktyka i dobre nawyki</h1>
+  <span class="kk" aria-hidden="true"><i></i></span>
+  <p class="lead">Paznokcie wrastające i zmienione chorobowo, odciski, modzele, pękające pięty i brodawki. Przyjmuje Beata Nykiel-Drzewiecka, także najmłodszych pacjentów.</p>
+  <div class="cta">
+   <a class="btn" href="https://booksy.com/pl-pl/359243_podologia-beata-nykiel_podologia_12355_bytom" rel="noopener" target="_blank">Umów wizytę online</a>
+   <a class="btn jasny" href="tel:+48881959383"><span>Zadzwoń<span class="dl">: 881 959 383</span></span></a>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="uslugi">
+ <div class="wrap">
+  <h2>Z czym przyjść do gabinetu</h2>
+  <span class="kk" aria-hidden="true"><i></i></span>
+  <p class="wst">Każda wizyta zaczyna się od obejrzenia stóp i rozmowy. Jeśli nie wiesz, który zabieg wybrać, zacznij od konsultacji - jej koszt odliczam od ceny zabiegu wykonanego podczas tej samej wizyty.</p>
+  <div class="usl">
+   <article>
+    <h3>Paznokcie zmienione chorobowo</h3>
+    <p>Najpierw ocena zmian, na przykład grzybicy. Potem oczyszczenie płytki, preparaty dobrane do problemu i plan pielęgnacji w domu.</p>
+    <div class="cz"><span>20-40 min</span><b>od 130 zł</b></div>
+   </article>
+   <article>
+    <h3>Wrastający paznokieć</h3>
+    <p>Usunięcie drażniącego fragmentu paznokcia, opracowanie wału paznokciowego i specjalistyczny opatrunek. Na wkręcające się paznokcie zakładam klamrę ortonyksyjną.</p>
+    <div class="cz"><span>30 min</span><b>od 200 zł</b></div>
+   </article>
+   <article>
+    <h3>Brodawki wirusowe</h3>
+    <p>Ocena zmiany, opracowanie i preparat dobrany do jej rodzaju i miejsca. Na pierwszej wizycie dostajesz preparaty i zalecenia do domu.</p>
+    <div class="cz"><span>15-30 min</span><b>320 zł</b></div>
+   </article>
+   <article>
+    <h3>Odciski, modzele, rogowiec</h3>
+    <p>Usunięcie zrogowaceń i odciążenie miejsc, które najbardziej cierpią od nacisku i tarcia, dobrane do miejsca i rodzaju zmiany.</p>
+    <div class="cz"><span>odciski i modzele</span><b>od 110 zł</b></div>
+   </article>
+   <article>
+    <h3>Pękające pięty i podeszwy</h3>
+    <p>Opracowanie twardej, pękającej skóry pięt i podeszwy, zakończone opatrunkiem, który chroni opracowaną skórę.</p>
+    <div class="cz"><span>z opatrunkiem</span><b>200 zł</b></div>
+   </article>
+   <article>
+    <h3>Zabieg podologiczny</h3>
+    <p>Podstawowy, profilaktyczny, gdy paznokcie i skóra są zdrowe, albo rozszerzony, gdy pojawiają się zgrubiałe paznokcie, modzele i odciski.</p>
+    <div class="cz"><span>40-50 min</span><b>220-250 zł</b></div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sek g" id="cennik">
+ <div class="wrap">
+  <h2>Cennik</h2>
+  <span class="kk" aria-hidden="true"><i></i></span>
+  <div class="cen">
+   <div>
+    <h3>Konsultacja i badania</h3>
+    <dl>
+     <div class="r"><dt>Konsultacja podologiczna<small>odliczana od ceny zabiegu na tej samej wizycie</small></dt><dd>100 zł</dd></div>
+     <div class="r"><dt>Badanie mykologiczne<small>mikroskopowe, hodowlane i metodą PCR</small></dt><dd>220 zł</dd></div>
+    </dl>
+    <h3>Zabiegi na stopy</h3>
+    <dl>
+     <div class="r"><dt>Podstawowy zabieg podologiczny - profilaktyczny</dt><dd>220 zł</dd></div>
+     <div class="r"><dt>Rozszerzony zabieg podologiczny</dt><dd>250 zł</dd></div>
+     <div class="r"><dt>Usunięcie modzeli i odcisków</dt><dd>od 110 zł</dd></div>
+     <div class="r"><dt>Opracowanie podeszwy stóp</dt><dd>200 zł</dd></div>
+     <div class="r"><dt>Opracowanie pękających pięt z opatrunkiem</dt><dd>200 zł</dd></div>
+     <div class="r"><dt>Opracowanie rogowca</dt><dd>250 zł</dd></div>
+     <div class="r"><dt>Terapia brodawek wirusowych<small>pierwsza wizyta z zestawem preparatów; kontynuacja 110 zł (do 4 szt.) lub 200 zł (5 i więcej)</small></dt><dd>320 zł</dd></div>
+    </dl>
+   </div>
+   <div>
+    <h3>Paznokcie</h3>
+    <dl>
+     <div class="r"><dt>Opracowanie zdrowych paznokci</dt><dd>130 zł</dd></div>
+     <div class="r"><dt>Opracowanie paznokci przerośniętych</dt><dd>200 zł</dd></div>
+     <div class="r"><dt>Opracowanie paznokci chorobowych<small>1 paznokieć 130 zł, 2 paznokcie 180 zł, wszystkie u stóp 260 zł</small></dt><dd>od 130 zł</dd></div>
+     <div class="r"><dt>Opracowanie paznokcia pourazowego</dt><dd>od 110 zł</dd></div>
+     <div class="r"><dt>Odbarczenie krwiaka podpaznokciowego</dt><dd>110 zł</dd></div>
+     <div class="r"><dt>Usunięcie wrastającego fragmentu paznokcia<small>1 paznokieć 200 zł, 2 paznokcie 350 zł</small></dt><dd>od 200 zł</dd></div>
+     <div class="r"><dt>Założenie klamry ortonyksyjnej</dt><dd>od 230 zł</dd></div>
+     <div class="r"><dt>Wizyta kontrolna klamry</dt><dd>od 150 zł</dd></div>
+     <div class="r"><dt>Rekonstrukcja płytki paznokciowej</dt><dd>od 150 zł</dd></div>
+    </dl>
+    <h3>Opatrunki i odciążenia</h3>
+    <dl>
+     <div class="r"><dt>Tamponada</dt><dd>80 zł</dd></div>
+     <div class="r"><dt>Zmiana opatrunku specjalistycznego</dt><dd>90 zł</dd></div>
+     <div class="r"><dt>Odciążenie miejsca zabiegowego</dt><dd>100 zł</dd></div>
+    </dl>
+   </div>
+  </div>
+  <p class="cen-st">Przy zapisie na niewłaściwą usługę cena i czas zabiegu mogą się zmienić na miejscu w gabinecie.</p>
+  <div class="cen-cta"><a class="btn" href="https://booksy.com/pl-pl/359243_podologia-beata-nykiel_podologia_12355_bytom" rel="noopener" target="_blank">Wybierz termin w Booksy</a></div>
+ </div>
+</section>
+
+<section class="sek" id="o-mnie">
+ <div class="wrap om">
+  <figure><img src="img/beata-800.webp" srcset="img/beata-480.webp 480w, img/beata-800.webp 800w" sizes="(max-width:860px) 82vw, 400px" width="800" height="800" alt="Beata Nykiel-Drzewiecka, podolog w Bytomiu" loading="lazy"></figure>
+  <div class="tekst">
+   <h2>Dzień dobry, jestem Beata</h2>
+   <span class="kk" aria-hidden="true"><i></i></span>
+   <p>Od 10 lat zajmuję się podologią. Najczęściej pracuję z paznokciami zmienionymi chorobowo i z brodawkami, chętnie przyjmuję też dzieci. W gabinecie zajmuję się pełną pielęgnacją i terapią stóp.</p>
+   <p class="cyt">Podologia to dla mnie nie tylko zabieg, ale też profilaktyka, edukacja i dobre nawyki. Zawsze pokazuję, jak dbać o stopy na co dzień.</p>
+   <p>Stawiam na indywidualne podejście i bezpieczeństwo, ciągle się uczę i szukam nowych rozwiązań. Prywatnie kocham góry, rower i aktywny czas z rodziną.</p>
+   <p class="podp">Beata Nykiel-Drzewiecka<span>podolog, Bytom</span></p>
+  </div>
+ </div>
+</section>
+
+<section class="sek ef" id="efekty">
+ <div class="wrap">
+  <h2>Przed i po - zdjęcia z gabinetu</h2>
+  <span class="kk" aria-hidden="true"><i></i></span>
+  <p class="wst">Prawdziwe efekty zabiegów wykonanych w gabinecie. Przesuń, aby zobaczyć kolejne, kliknij, aby powiększyć.</p>
+  <div class="tor" id="tor" data-tor>
+   <figure><button type="button" data-lb="img/g1-1600.webp"><img src="img/g1-560.webp" width="560" height="560" alt="Opracowanie paznokci zdrowych, przed i po" loading="lazy"></button><figcaption>Opracowanie paznokci zdrowych</figcaption></figure>
+   <figure><button type="button" data-lb="img/g2-1600.webp"><img src="img/g2-560.webp" width="560" height="560" alt="Odcisk, przed i po" loading="lazy"></button><figcaption>Odcisk</figcaption></figure>
+   <figure><button type="button" data-lb="img/g4-1600.webp"><img src="img/g4-560.webp" width="560" height="560" alt="Modzele, przed i po" loading="lazy"></button><figcaption>Modzele</figcaption></figure>
+   <figure><button type="button" data-lb="img/g5-1600.webp"><img src="img/g5-560.webp" width="560" height="560" alt="Wrastający paznokieć, przed i po" loading="lazy"></button><figcaption>Wrastający paznokieć</figcaption></figure>
+   <figure><button type="button" data-lb="img/g6-1600.webp"><img src="img/g6-560.webp" width="560" height="560" alt="Paznokieć wkręcający się, przed i po" loading="lazy"></button><figcaption>Paznokieć wkręcający się</figcaption></figure>
+   <figure><button type="button" data-lb="img/g8-1600.webp"><img src="img/g8-560.webp" width="560" height="560" alt="Rogowiec, przed i po" loading="lazy"></button><figcaption>Rogowiec</figcaption></figure>
+   <figure><button type="button" data-lb="img/g3-1600.webp"><img src="img/g3-560.webp" width="560" height="560" alt="Odcisk, przed i po" loading="lazy"></button><figcaption>Odcisk</figcaption></figure>
+   <figure><button type="button" data-lb="img/g7-1600.webp"><img src="img/g7-560.webp" width="560" height="560" alt="Paznokieć wkręcający się, przed i po" loading="lazy"></button><figcaption>Paznokieć wkręcający się</figcaption></figure>
+   <figure><button type="button" data-lb="img/g9-1600.webp"><img src="img/g9-560.webp" width="560" height="560" alt="Rogowiec, przed i po" loading="lazy"></button><figcaption>Rogowiec</figcaption></figure>
+   <figure><button type="button" data-lb="img/g10-1600.webp"><img src="img/g10-560.webp" width="560" height="560" alt="Opracowanie paznokcia uszkodzonego, przed i po" loading="lazy"></button><figcaption>Opracowanie paznokcia uszkodzonego</figcaption></figure>
+  </div>
+  <div class="nav-t" data-nav="tor">
+   <span class="lic">10 zdjęć</span>
+   <div>
+    <button type="button" data-k="-1" aria-label="Poprzednie zdjęcia"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button type="button" data-k="1" aria-label="Następne zdjęcia"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sek g" id="kontakt">
+ <div class="wrap">
+  <h2>Gabinet i dojazd</h2>
+  <span class="kk" aria-hidden="true"><i></i></span>
+  <div class="kon">
+   <div class="dane">
+    <div>
+     <h3>Zapisy</h3>
+     <a class="duzy" href="tel:+48881959383">881 959 383</a><br>
+     <a href="mailto:bnykiel@bytompodolog.pl">bnykiel@bytompodolog.pl</a>
+    </div>
+    <div>
+     <h3>Adres</h3>
+     <p>ul. Świętych Cyryla i Metodego 26B<br>41-909 Bytom</p>
+    </div>
+    <div>
+     <h3>Godziny przyjęć</h3>
+     <table class="godz">
+      <tr><td>Poniedziałek</td><td>10:00-20:00</td></tr>
+      <tr><td>Wtorek</td><td>8:00-16:00</td></tr>
+      <tr><td>Środa</td><td>8:00-16:00</td></tr>
+      <tr><td>Czwartek</td><td>10:00-20:00</td></tr>
+      <tr><td>Piątek</td><td>8:00-18:00</td></tr>
+      <tr class="zam"><td>Sobota i niedziela</td><td>nieczynne</td></tr>
+     </table>
+    </div>
+    <div><a class="btn" href="https://booksy.com/pl-pl/359243_podologia-beata-nykiel_podologia_12355_bytom" rel="noopener" target="_blank">Umów wizytę online</a></div>
+   </div>
+   <div class="mapa" id="mapa" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.5251288079608!2d18.930150613140793!3d50.3260216714501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d2ef4470209b%3A0x566541e485db8697!2s%C5%9Awi%C4%99tych%20Cyryla%20i%20Metodego%2026B%2C%2041-909%20Bytom!5e0!3m2!1spl!2spl!4v1789228338029!5m2!1spl!2spl">
+    <div class="zas"><p>ul. Świętych Cyryla i Metodego 26B, Bytom</p><p>Mapa Google wczyta się po przewinięciu.</p></div>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer class="st">
+ <div class="wrap">
+  <div class="gr">
+   <div>
+    <img src="img/logo-biale.webp" width="600" height="216" alt="Podologia Beata Nykiel-Drzewiecka" loading="lazy">
+    <p style="margin-top:14px">Gabinet podologiczny w Bytomiu</p>
+   </div>
+   <div>
+    <h3>Strona</h3>
+    <ul><li><a href="#uslugi">Usługi</a></li><li><a href="#cennik">Cennik</a></li><li><a href="#o-mnie">O mnie</a></li><li><a href="#efekty">Efekty</a></li><li><a href="#kontakt">Kontakt</a></li></ul>
+   </div>
+   <div>
+    <h3>Kontakt</h3>
+    <ul><li><a href="tel:+48881959383">881 959 383</a></li><li><a href="mailto:bnykiel@bytompodolog.pl">bnykiel@bytompodolog.pl</a></li><li>ul. Świętych Cyryla i Metodego 26B, 41-909 Bytom</li></ul>
+   </div>
+  </div>
+  <div class="dol">
+   <span>&copy; <span id="rok">2026</span> Podologia Beata Nykiel-Drzewiecka. Zdjęcie na pierwszym ekranie poglądowe.</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bytompodolog.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button>
+ <button class="pv" type="button" aria-label="Poprzednie"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+ <img alt="">
+ <button class="nx" type="button" aria-label="Następne"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+ <p></p>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
