@@ -86,14 +86,18 @@ p{margin:0}
 .hero .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 .hero .kk{color:var(--gold2)}
 @media (max-width:860px){
- .hero picture{display:block;position:relative;padding-top:var(--hh);background:var(--nav)}
- .hero picture::after{content:"";position:absolute;inset:auto 0 0;height:34%;background:linear-gradient(180deg,rgba(41,47,69,0),var(--nav))}
- .hero .cta{gap:10px}
- .hero .cta .btn{flex:1 1 0;padding:0 12px;font-size:.97rem;white-space:nowrap}
- .hero .cta .dl{display:none}
  .hero{min-height:100svh;display:flex;flex-direction:column}
- .hero .tx{padding:14px 0 36px;flex:1;display:flex;flex-direction:column;justify-content:center}
- .hero .lead{margin-top:12px}
+ .hero picture{display:block;position:relative;padding-top:var(--hh);background:var(--nav);flex:none}
+ .hero picture img{height:max(150px,31svh);object-fit:cover;object-position:50% 42%}
+ .hero picture::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(180deg,rgba(41,47,69,0),var(--nav))}
+ .hero .tx{padding:6px 0 max(20px,3svh);flex:1;display:flex;flex-direction:column;justify-content:center}
+ .hero .adr{font-size:.88rem}
+ .hero h1{margin-top:6px;font-size:clamp(23px,4.1svh,31px);max-width:none}
+ .hero .kk{margin-top:12px}
+ .hero .lead{margin-top:10px;font-size:clamp(14.5px,2.35svh,16.5px);line-height:1.5}
+ .hero .cta{gap:10px;margin-top:max(24px,3svh)}
+ .hero .cta .btn{flex:1 1 0;min-height:50px;padding:0 10px;font-size:.95rem;white-space:nowrap}
+ .hero .cta .dl{display:none}
 }
 @media (min-width:861px){
  .hero{min-height:max(640px,100svh);display:flex;align-items:center}
@@ -251,7 +255,7 @@ p{margin:0}
   <p class="adr">ul. Świętych Cyryla i Metodego 26B, Bytom</p>
   <h1>Gabinet podologiczny w Bytomiu - zabieg, profilaktyka i dobre nawyki</h1>
   <span class="kk" aria-hidden="true"><i></i></span>
-  <p class="lead">Paznokcie wrastające i zmienione chorobowo, odciski, modzele, pękające pięty i brodawki. Przyjmuje Beata Nykiel-Drzewiecka, także najmłodszych pacjentów.</p>
+  <p class="lead">Paznokcie wrastające i zmienione chorobowo, odciski, modzele, pękające pięty, brodawki. Przyjmuje Beata Nykiel-Drzewiecka, także dzieci.</p>
   <div class="cta">
    <a class="btn" href="https://booksy.com/pl-pl/359243_podologia-beata-nykiel_podologia_12355_bytom" rel="noopener" target="_blank">Umów wizytę online</a>
    <a class="btn jasny" href="tel:+48881959383"><span>Zadzwoń<span class="dl">: 881 959 383</span></span></a>
